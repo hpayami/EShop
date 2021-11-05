@@ -4,4 +4,21 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.Common\EShop.Common.csproj" />
+    <ProjectReference Include="..\EShop.DataLayer\EShop.DataLayer.csproj" />
+    <ProjectReference Include="..\EShop.Entities\EShop.Entities.csproj" />
+    <ProjectReference Include="..\EShop.IocConfig\EShop.IocConfig.csproj" />
+    <ProjectReference Include="..\EShop.Services\EShop.Services.csproj" />
+    <ProjectReference Include="..\EShop.ViewModels\EShop.ViewModels.csproj" />
+  </ItemGroup>
+
+
 </Project>
