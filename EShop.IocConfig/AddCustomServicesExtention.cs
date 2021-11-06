@@ -22,6 +22,8 @@ namespace EShop.IocConfig
             });
 
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUnitOfWork, EShopDbContext>();
+
             return services;
         }
     }

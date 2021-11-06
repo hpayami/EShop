@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EShop.DataLayer.Migrations
 {
-    [DbContext(typeof(EShopDbContext))]
+    [DbContext(typeof(IUnitOfWork))]
     [Migration("20211106063616_V2021_11_06_1005")]
     partial class V2021_11_06_1005
     {

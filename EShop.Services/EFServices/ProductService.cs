@@ -10,13 +10,13 @@ namespace EShop.Services.EFServices
 {
     public class ProductService : IProductService
     {
-        private readonly EShopDbContext _dbContext;
+        private readonly IUnitOfWork _uow;
         private readonly DbSet<Product> _product;
 
-        public ProductService(EShopDbContext dbContext)
+        public ProductService(IUnitOfWork uow)
         {
-            _dbContext = dbContext;
-            _product = _dbContext.Set<Product>();
+            _uow = uow;
+            _product = uow.Set<Product>();
         }
 
         public void Add(Product product)
