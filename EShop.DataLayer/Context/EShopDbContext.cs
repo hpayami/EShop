@@ -1,4 +1,5 @@
 ﻿using EShop.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EShop.DataLayer.Context
 {
-    public class EShopDbContext : DbContext , IUnitOfWork
+    public class EShopDbContext : IdentityDbContext<User,Role,int> , IUnitOfWork
     {
         public EShopDbContext(DbContextOptions options) : base(options)
         {
