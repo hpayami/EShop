@@ -11,6 +11,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\EShop.DataLayer\EShop.DataLayer.csproj" />
+	  <ProjectReference Include="..\EShop.Services\EShop.Services.csproj" />
 	  <ProjectReference Include="..\EShop.ViewModels\EShop.ViewModels.csproj" />
 	</ItemGroup>
 

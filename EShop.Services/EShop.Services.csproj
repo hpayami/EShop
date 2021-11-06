@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.DataLayer\EShop.DataLayer.csproj" />
+    <ProjectReference Include="..\EShop.Entities\EShop.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,6 @@
 ﻿using EShop.DataLayer.Context;
+using EShop.Services.Contracts;
+using EShop.Services.EFServices;
 using EShop.ViewModels.App;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,8 @@ namespace EShop.IocConfig
             {
                 options.UseSqlServer(connectionStrings.EShopConnectionString);
             });
+
+            services.AddScoped<IProductService, ProductService>();
             return services;
         }
     }
